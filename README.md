@@ -1,6 +1,6 @@
 # Hugging Face 界面汉化
 
-把 huggingface.co 的界面文字换成中文的用户脚本。作者：陈鑫宇。
+把 huggingface.co 的界面文字换成中文的用户脚本。
 
 ![模型列表页](https://raw.githubusercontent.com/u2tt/hf-zh/main/screenshots/models.png)
 
@@ -52,6 +52,6 @@ Chrome、Edge、Firefox 测过。Safari 需要 Userscripts 一类的扩展。
 
 漏翻或者翻错，请在 GitHub 提 issue，带上页面地址和那句英文：https://github.com/u2tt/hf-zh/issues
 
-许可 MIT，与 Hugging Face 官方无关。
+许可 MIT，与 Hugging Face 官方无关。问题也欢迎直接提在 GitHub。
 
 ![空间列表](https://raw.githubusercontent.com/u2tt/hf-zh/main/screenshots/spaces.png)
