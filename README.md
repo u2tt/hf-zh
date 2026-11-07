@@ -28,6 +28,8 @@ Hugging Face 只有英文界面，导航和筛选、排序、详情页的按钮�
 
 打开 huggingface.co 就会生效，首屏大约 400 毫秒翻译完。左下角有圆形按钮，也可以按 Alt+Z，切到英文或切回中文，选择记在 localStorage 里，刷新后保持。切到英文时，被改过的文字还原成原文。
 
+huggingface.co 打不开时可以用 hf-mirror.com，界面是同一套，脚本在这个域名下也生效。
+
 Chrome、Edge、Firefox 测过。Safari 需要 Userscripts 一类的扩展。
 
 ## 说明

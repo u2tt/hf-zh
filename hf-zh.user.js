@@ -11,6 +11,7 @@
 // @match         https://www.huggingface.co/*
 // @match         https://hf.co/*
 // @match         https://*.hf.co/*
+// @match         https://hf-mirror.com/*
 // @run-at        document-idle
 // @noframes
 // @grant         none
