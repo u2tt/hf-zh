@@ -48,6 +48,12 @@ https://raw.githubusercontent.com/u2tt/hf-zh/main/hf-zh.user.js
 - Webhook 的 secret 只在 GreasyFork「设置 → webhook」页可见，**不要写进仓库或笔记**。
 - Playwright 的 **headed 窗口在本机会被立即关闭**，别用它做人工登录；需要登录的操作交给用户点。
 - 同步 URL 必须是 raw 形式且文件名以 `.user.js` 结尾，否则导入会失败。
+- raw.githubusercontent.com 有 CDN 缓存，push 后可能几分钟内仍返回旧内容。确认线上到底是不是新版，用 api 接口（不走 CDN）：
+  ```bash
+  curl -s -x http://127.0.0.1:7897 "https://api.github.com/repos/u2tt/hf-zh/contents/hf-zh.user.js?ref=main" -H "Accept: application/vnd.github.raw" | grep -n "@match"
+  ```
+  两边不一致就是缓存没刷，等一会再触发 GreasyFork 同步即可，不用重新提交。
+- push 报 `OpenSSL SSL_read: unexpected eof while reading` 是代理抖动，重试即可；重试后用 `git ls-remote origin main` 确认远端 commit 是否真的更新了（本地 commit 成功不等于 push 成功）。
 
 ## 已挂同步的其它脚本
 - DeepSeek 内容宽度调节 → https://raw.githubusercontent.com/u2tt/deepseek-width/main/deepseek-width.user.js
