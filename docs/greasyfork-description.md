@@ -30,6 +30,8 @@ Hugging Face 只有英文界面，导航、筛选、排序、卡片角标、分�
 
 脚本在 document-idle 阶段执行，页面可交互后立即扫描一遍；此后由 MutationObserver 跟随页面重渲染补译，单页应用路由切换时自动重扫。
 
+更新由脚本管理器按 @version 检查，本页安装的版本会在检查周期内升到新版本，不需要手动重装。
+
 ## 使用
 
 - 打开 huggingface.co 即生效，不需要任何配置。镜像站 hf-mirror.com 同样生效。
