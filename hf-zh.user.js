@@ -3,7 +3,7 @@
 // @name:en       Hugging Face Chinese UI
 // @namespace     hf-zh.chenxinyu
 // @version       1.0.0
-// @description   把 huggingface.co 的界面文案汉化：导航、筛选、排序、模型/数据集/空间页、下拉菜单、页脚等。整段文本精确匹配，不会破坏模型卡正文与代码。
+// @description   把 huggingface.co 的界面完整汉化：导航、搜索、筛选面板、排序下拉、模型/数据集/空间页、定价、文档、页脚与全部下拉菜单，729 条词条 + 动态文本规则。整段精确匹配，不破坏模型卡正文与代码；Alt+Z 可切回英文。
 // @description:en Localize the Hugging Face UI into Chinese. Exact-node matching only, so model cards and code blocks stay untouched.
 // @author        陈鑫宇
 // @license       MIT
