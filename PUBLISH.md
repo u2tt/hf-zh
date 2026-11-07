@@ -55,5 +55,12 @@ https://raw.githubusercontent.com/u2tt/hf-zh/main/hf-zh.user.js
   两边不一致就是缓存没刷，等一会再触发 GreasyFork 同步即可，不用重新提交。
 - push 报 `OpenSSL SSL_read: unexpected eof while reading` 是代理抖动，重试即可；重试后用 `git ls-remote origin main` 确认远端 commit 是否真的更新了（本地 commit 成功不等于 push 成功）。
 
+## 页面介绍（附加信息）同步
+GreasyFork 脚本页的正文（「附加信息」）不跟脚本版本同步，需要单独配一条：
+- 文案文件：`docs/greasyfork-description.md`
+- 管理页 /zh-CN/scripts/604194/admin 「您可以选择同步脚本的其他信息」里填 raw 直链
+  `https://raw.githubusercontent.com/u2tt/hf-zh/main/docs/greasyfork-description.md`，格式选 Markdown
+- 改介绍页 = 改这个文件并 push（GF 的 webhook 只匹配 commit 里 **modified** 的文件，新增文件那一次不触发）
+
 ## 已挂同步的其它脚本
 - DeepSeek 内容宽度调节 → https://raw.githubusercontent.com/u2tt/deepseek-width/main/deepseek-width.user.js
